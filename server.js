@@ -74,11 +74,10 @@ app.get('/about', (req, res) => {
 
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
-        projectList: {
             Project1: project1link,
             Project2: project2link,
             Project3: project3link
-        } 
+        
     });
 })
 
