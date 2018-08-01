@@ -72,6 +72,16 @@ app.get('/about', (req, res) => {
     //.render() lets you set up any templates set up with our current view engine (hbs)
 })
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        projectList: {
+            Project1: project1link,
+            Project2: project2link,
+            Project3: project3link
+        } 
+    });
+})
+
 //app.get: Setting up a handler for an http.get request
 //The first srgument is the url, 
 //The second argument is the callback function that tells express what to send back once the person has made the request
