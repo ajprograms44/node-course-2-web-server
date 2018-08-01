@@ -70,16 +70,16 @@ app.get('/about', (req, res) => {
         pageTitle: 'About Page',
     });
     //.render() lets you set up any templates set up with our current view engine (hbs)
-})
+});
 
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
+            welcomeMessage: 'Hello, welcome to the home page!',
             Project1: 'project1link',
             Project2: 'project2link',
             Project3: 'project3link'
-        
     });
-})
+});
 
 //app.get: Setting up a handler for an http.get request
 //The first srgument is the url, 
